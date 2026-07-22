@@ -1,0 +1,15 @@
+﻿# Backend (PHP)
+/backend/vendor/
+/backend/.env
+/backend/composer.lock
+
+# Frontend (Next.js)
+/frontend/node_modules/
+/frontend/.next/
+/frontend/out/
+/frontend/.env.local
+
+# General
+.DS_Store
+*.log
+.vscode/
