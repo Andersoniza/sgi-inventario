@@ -1,7 +1,6 @@
 ﻿# SGI - Backend (PHP)
 
-API REST escrita en PHP puro (sin framework), organizada en capas MVC + Services + Repositories,
-con autoload PSR-4 via Composer.
+API REST escrita en PHP puro (sin framework), organizada en capas MVC + Services + Repositories.
 
 ## Flujo de una peticion
 
@@ -13,7 +12,7 @@ Request HTTP -> public/index.php (front controller) -> Core/Router.php -> Middle
 
 - Controllers: solo traducen HTTP <-> PHP, sin logica de negocio ni SQL.
 - Services: concentran las reglas de negocio (ej. AlertaReabastecimientoService decide cuando
-  notificar al proveedor). Equivalen a los include/extend de los casos de uso de la Tarea 4.0.
+  notificar al proveedor).
 - Repositories: aislan el acceso a datos.
 - Models: representan entidades (Producto, Categoria, etc.) sin logica de negocio.
 
@@ -53,7 +52,7 @@ GET|POST /api/auditorias
 GET /api/reportes/inventario
 POST /api/ventas/actualizar-stock  (webhook del sistema externo de ventas)
 
-## Como se ejecutaria (cuando ya tenga codigo)
+## Como se ejecutaria
 
 cd backend
 copy .env.example .env
