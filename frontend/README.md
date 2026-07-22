@@ -5,8 +5,7 @@ Consume la API REST del backend PHP.
 
 ## Principios de la estructura
 
-- src/app/ define las rutas: cada carpeta = una URL real, agrupada por modulo de negocio,
-  reflejando los casos de uso de la Tarea 4.0.
+- src/app/ define las rutas: cada carpeta = una URL real, agrupada por modulo de negocio
 - src/components/ui/        -> componentes genericos sin logica de negocio (Button, Table, Modal, Input, Badge)
 - src/components/layout/    -> Sidebar, Navbar, Footer
 - src/components/<modulo>/  -> componentes especificos (formularios y tablas de ese dominio)
@@ -34,7 +33,7 @@ Consume la API REST del backend PHP.
 - Componentes: PascalCase (ProductoForm.jsx)
 - Servicios/hooks/utils: camelCase (productoService.js, useAuth.js)
 
-## Como se ejecutaria (cuando ya tenga codigo)
+## Como se ejecutaria
 
 cd frontend
 copy .env.local.example .env.local
